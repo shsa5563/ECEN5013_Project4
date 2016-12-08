@@ -1,8 +1,8 @@
 /*
  * derivative.h
  *
- *  Created on: Oct 12, 2016
- *      Author: rohi2
+ *  Created on: 02 DEC, 2016
+ *      Author: Shekhar Satyanarayana
  */
 
 #ifndef SOURCES_DERIVATIVE_H_

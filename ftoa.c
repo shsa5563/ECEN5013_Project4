@@ -1,8 +1,8 @@
 /*
  * ftoa.c
  *
- *  Created on: Dec 6, 2016
- *      Author: shva9978
+ *  Created on: 02 Dec , 2016
+ *      Author: Sayan Barman
  */
 
 
@@ -36,8 +36,8 @@ void print_string(char *ptr_str, uint32_t len)
 	for(i=0;i<len;i++)
 		{send_data(*ptr_str++);
 		}
-	send_data("\n");
-	send_data("\r");
+	//send_data("\n");
+	//send_data("\r");
 }
 
 void print_stringl(char *ptr)

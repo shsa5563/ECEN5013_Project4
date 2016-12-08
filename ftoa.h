@@ -1,8 +1,8 @@
 /*
  * ftoa.h
  *
- *  Created on: Dec 6, 2016
- *      Author: shva9978
+ *  Created on: Dec 02, 2016
+ *      Author: Sayan Barman
  */
 
 #ifndef SOURCES_FTOA_H_

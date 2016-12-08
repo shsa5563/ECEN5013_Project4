@@ -13,10 +13,10 @@ uint8_t test_status;
 
 uint8_t  test_touch()
 {
-	int output = capsense_init(10);
+	int output = touch_data(10);
 	if (!(output > 0))
 	{
-		return test_status =1 ;
+		return test_status = 1 ;
 	}
 	else
 	{
@@ -27,7 +27,7 @@ uint8_t  test_touch()
 
 uint8_t  test_not_touch()
 {
-	int output = capsense_init(10);
+	int output = touch_data(10);
 	if (output > 0)
 	{
 		return test_status =1 ;
