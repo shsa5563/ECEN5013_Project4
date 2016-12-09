@@ -38,6 +38,7 @@
 #include "I2C.h"
 #include <math.h>
 #include <main.h>
+#define CompileTime
 uint8_t test_func_result;
 
 void delay()
@@ -68,6 +69,13 @@ int flag = 0;
 	int cap_sense_touched=0;
 	//Initialize TSI Sensor With channel 10
 	capsense_init(1 << 10);
+#ifndef CompileTime
+test_func_result = test_touch();
+if(test_func_result ==1)
+	print_stringl("\r\nTouch true");
+test_func_result = test_not_touch();
+print_stringl("\r\nTouch false");
+#endif
 	while (1)
 	{
 		(*delayptr)();
@@ -88,8 +96,6 @@ int flag = 0;
 		}
 		(*delayptr)();
 
-		//test_func_result = test_touch();
-		//test_func_result = test_not_touch();
 		if(flag == 1)
 		{
 		//if (DataReady)
